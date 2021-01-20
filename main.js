@@ -1,5 +1,5 @@
 // Question 1.
-const prices = [];
+// const prices = [];
 
 // items.forEach((item) => {
 //   prices.push(item.price);
@@ -21,6 +21,13 @@ const prices = [];
 // console.log(prices);
 
 // Quesetion 3.
-const gbp = items.filter(x => x.currency_code === "GBP");
+// const gbp = items.filter(x => x.currency_code === "GBP");
+//
+// console.log(`${gbp[0].title} costs £${gbp[0].price}`);
 
-console.log(`${gbp[0].title} costs £${gbp[0].price}`);
+// Question 4.
+const wood = items.filter(x => x.materials.includes("wood"));
+
+wood.forEach((item) => {
+    console.log(`${item.title} is made of wood.`);
+});
