@@ -12,10 +12,15 @@ const prices = [];
 
 
 // Question 2.
-const usd = items.filter(x => x.currency_code === "USD" && x.price > 14.00 && x.price < 18.00);
+// const usd = items.filter(x => x.currency_code === "USD" && x.price > 14.00 && x.price < 18.00);
+//
+// usd.forEach((item) => {
+//   prices.push(item.title)
+// });
+//
+// console.log(prices);
 
-usd.forEach((item) => {
-  prices.push(item.title)
-});
+// Quesetion 3.
+const gbp = items.filter(x => x.currency_code === "GBP");
 
-console.log(prices);
+console.log(`${gbp[0].title} costs £${gbp[0].price}`);
