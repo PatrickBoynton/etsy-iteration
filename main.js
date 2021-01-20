@@ -26,8 +26,16 @@
 // console.log(`${gbp[0].title} costs £${gbp[0].price}`);
 
 // Question 4.
-const wood = items.filter(x => x.materials.includes("wood"));
+// const wood = items.filter(x => x.materials.includes("wood"));
+//
+// wood.forEach((item) => {
+//     console.log(`${item.title} is made of wood.`);
+// });
 
-wood.forEach((item) => {
-    console.log(`${item.title} is made of wood.`);
+//  Quesetion.
+const greaterThanEight = items.filter(x => x.materials.length > 7);
+
+greaterThanEight.forEach((item) => {
+    console.log(`${item.title}\n\n`);
+    console.log(`${item.materials}` + "\n");
 });
