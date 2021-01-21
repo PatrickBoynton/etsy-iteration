@@ -1,14 +1,11 @@
 // Question 1.
-const prices = [];
+// In class refactor.
+const prices = items.map(item => item.price);
 
-// items.forEach((item) => {
-//   prices.push(item.price);
-// });
 
-//
-// const averagePrice = prices.reduce((a, b) => a + b) / items.length;
-//
-// console.log(`The average price is: $${averagePrice.toFixed(2)}`);
+const averagePrice = prices.reduce((a, b) => a + b) / items.length;
+
+console.log(`The average price is: $${averagePrice.toFixed(2)}`);
 
 
 // Question 2.
