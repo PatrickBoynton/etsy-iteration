@@ -1,11 +1,11 @@
 // Question 1.
 // In class refactor.
-const prices = items.map(item => item.price);
-
-
-const averagePrice = prices.reduce((a, b) => a + b) / items.length;
-
-console.log(`The average price is: $${averagePrice.toFixed(2)}`);
+// const prices = items.map(item => item.price);
+//
+//
+// const averagePrice = prices.reduce((a, b) => a + b) / items.length;
+//
+// console.log(`The average price is: $${averagePrice.toFixed(2)}`);
 
 
 // Question 2.
@@ -31,12 +31,16 @@ console.log(`The average price is: $${averagePrice.toFixed(2)}`);
 // });
 
 //  Quesetion 5.
-// const greaterThanEight = items.filter(x => x.materials.length > 7);
-//
-// greaterThanEight.forEach((item) => {
-//     console.log(`${item.title}\n\n`);
-//     console.log(`${item.materials}` + "\n");
-// });
+const greaterThanEight = items.filter(x => x.materials.length > 7);
+
+greaterThanEight.forEach((item) => {
+    console.log(`${item.title}\n\n`);
+    // In class refactor
+    item.materials.forEach((item) => {
+      console.log(`${item}`);
+    });
+
+});
 
 // Question 6.
 // const whoMade = items.filter(x => x.who_made === "i_did");
